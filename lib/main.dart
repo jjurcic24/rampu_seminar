@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'pocetni.dart';
-
+import 'rute.dart';
 void main(){
   runApp(const RampuSeminarApp());
 }
@@ -9,7 +8,8 @@ class RampuSeminarApp extends StatelessWidget{
   const RampuSeminarApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      title: 'Navigacija u Flutteru',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
@@ -20,7 +20,7 @@ class RampuSeminarApp extends StatelessWidget{
           brightness: Brightness.dark,
         ),
       ),
-      home: const Pocetni(),
+      routerConfig: ruter,
     );
   }
 }
