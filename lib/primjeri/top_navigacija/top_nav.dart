@@ -14,7 +14,7 @@ class TopNav extends StatelessWidget {
           bottom: const TabBar(
             tabs: [
               Tab(icon: Icon(Icons.menu_book), text: 'Knjige'),
-              Tab(icon: Icon(Icons.category), text: 'Albumi'),
+              Tab(icon: Icon(Icons.category), text: 'Žanrovi'),
               Tab(icon: Icon(Icons.edit), text: 'Pisci'),
             ],
           ),
@@ -27,7 +27,7 @@ class TopNav extends StatelessWidget {
             ),
             Sadrzaj(
               ikona: Icons.category,
-              stavke: ['Album 1', 'Album 2'],
+              stavke: ['Žanr 1', 'Žanr 2'],
             ),
             Sadrzaj(
               ikona: Icons.edit,
