@@ -11,4 +11,5 @@ class Primjer {
 final List<Primjer> primjeri = [
     Primjer(naslov: 'Imperativna navigacija', putanja: '/imperativna'),
     Primjer(naslov: 'Deklarativna navigacija', putanja: '/proizvodi'),
+    Primjer(naslov: 'Bottom navigation', putanja: '/bottom'),
 ];
