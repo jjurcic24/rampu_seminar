@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:rampu_seminar/primjeri/rail_nav/rail_nav.dart';
 
 import 'pocetni.dart';
 import 'primjeri/imperativna_navigacija/unos.dart';
@@ -8,6 +9,7 @@ import 'primjeri/bottom_navigacija/bottom_navigacija.dart';
 import 'primjeri/top_navigacija/top_nav.dart';
 import 'primjeri/drawer_navigacija/drawer_nav.dart';
 import 'primjeri/izbornici/izbornici.dart';
+import 'primjeri/rail_nav/rail_nav.dart';
 
 final GoRouter ruter = GoRouter(
   routes: [
@@ -44,6 +46,10 @@ final GoRouter ruter = GoRouter(
         GoRoute(
           path: 'izbornici', // → /izbornici
           builder: (context, state) => const Izbornici(),
+        ),
+        GoRoute(
+          path: 'rail', // → /rail
+          builder: (context, state) => const RailNav(),
         ),
       ],
     ),
