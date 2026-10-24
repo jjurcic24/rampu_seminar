@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'stranice.dart';
 
-// Ekran s donjom navigacijom – Stateful jer pamti odabrano odredište
 class BottomNavigacija extends StatefulWidget {
   const BottomNavigacija({super.key});
 
