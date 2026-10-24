@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
 
-class Primjer{
+import 'imperativna_navigacija/unos.dart';
+
+class Primjer {
   final String naslov;
-  final String opis;
-  final IconData ikona;
-  final WidgetBuilder graditelj;
+  final WidgetBuilder navigator;
 
   const Primjer({
     required this.naslov,
-    required this.opis,
-    required this.ikona,
-    required this.graditelj,
+    required this.navigator,
   });
 }
 
-final List<Primjer> primjeri = [];
+final List<Primjer> primjeri = [
+  Primjer(
+    naslov: 'Imperativna navigacija',
+    navigator: (context) => const ImperativnaNavigacija(),
+  ),
+];
