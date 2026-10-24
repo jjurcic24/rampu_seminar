@@ -7,6 +7,7 @@ import 'primjeri/deklarativna_navigacija/detalji.dart';
 import 'primjeri/bottom_navigacija/bottom_navigacija.dart';
 import 'primjeri/top_navigacija/top_nav.dart';
 import 'primjeri/drawer_navigacija/drawer_nav.dart';
+import 'primjeri/izbornici/izbornici.dart';
 
 final GoRouter ruter = GoRouter(
   routes: [
@@ -35,13 +36,14 @@ final GoRouter ruter = GoRouter(
           path: 'bottom',
           builder: (context, state) => const BottomNavigacija(),
         ),
-        GoRoute(
-          path: 'tabovi',
-          builder: (context, state) => const TopNav(),
-        ),
+        GoRoute(path: 'tabovi', builder: (context, state) => const TopNav()),
         GoRoute(
           path: 'drawer',
           builder: (context, state) => const DrawerNavigacija(),
+        ),
+        GoRoute(
+          path: 'izbornici', // → /izbornici
+          builder: (context, state) => const Izbornici(),
         ),
       ],
     ),

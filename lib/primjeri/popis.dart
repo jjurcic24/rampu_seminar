@@ -11,4 +11,5 @@ final List<Primjer> primjeri = [
   Primjer(naslov: 'Bottom navigation', putanja: '/bottom'),
   Primjer(naslov: 'Top navigation', putanja: '/tabovi'),
   Primjer(naslov: 'Navigation drawer', putanja: '/drawer'),
+  Primjer(naslov: 'Izbornici', putanja: '/izbornici'),
 ];
